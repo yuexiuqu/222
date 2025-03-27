@@ -1,19 +1,25 @@
 @echo off
-REM 进入你的本地仓库目录（根据实际路径修改）
 cd /d "C:\Users\Administrator\fengying"
 
-REM 检查Git状态
-git status
-
-REM 添加所有更改到暂存区
+echo === Adding all local changes first ===
 git add --all
 
-REM 提交更改（自动填写提交信息）
-git commit -m "自动更新: %date% %time%"
+echo === Committing changes (if any) ===
+git commit -m "Auto update: %date% %time%"
+if %errorlevel% neq 0 (
+    echo No local changes to commit.
+)
 
-REM 推送到GitHub（分支名默认为main，根据实际情况修改）
+echo === Pulling latest changes from GitHub ===
+git pull --rebase origin main
+if errorlevel 1 (
+    echo Pull failed. Please check for conflicts or network issues.
+    pause
+    exit /b
+)
+
+echo === Pushing to GitHub ===
 git push origin main
 
-REM 显示完成信息
-echo 更新已推送到GitHub！
+echo Sync complete.
 pause
