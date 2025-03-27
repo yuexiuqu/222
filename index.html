@@ -1,13 +1,22 @@
 
 <!DOCTYPE html>
-<html lang="zh">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <title>天问一号·反推火箭着陆演示</title>
+  <meta charset="UTF-8">
+  <title>天问一号：反推火箭演示</title>
+  <style>
+    body { background: black; color: white; font-family: sans-serif; text-align: center; }
+    .rocket { margin: 80px auto; width: 60px; height: 120px; background: url('rocket.png') no-repeat center/contain; animation: fall 6s ease-out forwards; }
+    @keyframes fall {
+      0% { transform: translateY(-600px); opacity: 0.2; }
+      80% { opacity: 1; }
+      100% { transform: translateY(0); }
+    }
+  </style>
 </head>
-<body style="background:black;color:white;text-align:center;">
-  <h1>🚀 广州市第十七中学 · 天问一号着陆演示</h1>
-  <p>模拟加载 Unity WebGL 动画（实际完整版即将上传）</p>
-  <p>👉 请耐心等待演示平台上线</p>
+<body>
+  <h1>🚀 广州市第十七中学 · 天问一号反推火箭模拟</h1>
+  <div class="rocket"></div>
+  <p>🛬 着陆成功！反推火箭已完成任务</p>
 </body>
 </html>
