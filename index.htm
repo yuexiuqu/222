@@ -1,0 +1,947 @@
+<meta http-equiv=Content-Type content=text/html; charset=gb2312>
+<style>
+
+
+
+.blue16{font-size:16px;color:#0000ff;}
+.blue16:hover{
+color:#ff0000;
+background-color:#00ff00;
+cursor:pointer;
+}
+
+.blue18{font-size:18px;color:#0000ff;}
+.blue18:hover{
+color:#ff0000;
+background-color:#00ff00;
+cursor:pointer;
+}
+.red16{font-size:16px;color:#ff0000;}
+.red16:hover{
+color:#ffffff;
+background-color:#0000ff;
+}
+
+div.rightArrow {
+	position: relative;
+	background: green;
+	display: inline-block;
+	padding: 15px;
+	color: #FFF;
+	text-decoration: none;
+	border-radius: 6px;
+box-shadow: 2px 2px 2px #444;-moz-box-shadow: 2px 2px 2px #444;
+-webkit-box-shadow: 2px 2px 2px #444;z-index:100;
+
+
+}
+div:hover.rightArrow {
+	background: #ff0000;
+}
+div.rightArrow:after {
+	position: absolute;
+	top: 60%;
+	left: 100%;
+	margin-top: -11px;
+	content: ' ';
+	width: 0;
+	height: 0;
+	border-left: 30px solid green;
+	border-right: 30px solid transparent;
+	border-bottom: 30px solid transparent;
+	border-top: 30px solid transparent;
+
+}
+div:hover.rightArrow:after {
+	border-left-color: #ff0000;
+}
+
+
+
+
+
+
+
+div.leftArrow {
+	position: relative;
+	background: orange;
+	display: inline-block;
+	padding: 15px;
+	color: #FFF;
+	text-decoration: none;
+	border-radius: 6px;
+}
+div:hover.leftArrow {
+	background: #000;
+}
+div.leftArrow:after {
+	position: absolute;
+	top: 50%;
+	right: 100%;
+	margin-top: -11px;
+	content: ' ';
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid orange;
+	border-bottom: 10px solid transparent;
+	border-top: 10px solid transparent;
+}
+div:hover.leftArrow:after {
+	border-right-color: #000;
+}
+
+.topArrow {
+	position: relative;
+	background: darkcyan;
+	display: inline-block;
+	padding: 15px;
+	color: #FFF;
+	text-decoration: none;
+	border-radius: 6px;
+}
+.topArrow:after {
+	position: absolute;
+	bottom: 100%;
+	right: 50%;
+	margin-right: -9px;
+	content: ' ';
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid darkcyan;
+	border-top: 10px solid transparent;
+}
+
+
+.bottomArrow {
+	position: relative;
+	background: brown;
+	display: inline-block;
+	padding: 15px;
+	color: #FFF;
+	text-decoration: none;
+	border-radius: 6px;
+}
+.bottomArrow:after {
+	position: absolute;
+	top: 100%;
+	right: 50%;
+	margin-right: -50px;
+	content: ' ';
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-top: 10px solid brown;
+}
+
+.rightAngleArrow {
+	position: relative;
+	background: #888;
+	display: inline-block;
+	padding: 15px;
+	color: #FFF;
+	text-decoration: none;
+}
+.rightAngleArrow:after {
+	position: absolute;
+	bottom: 0;
+	left: 100%;
+	content: ' ';
+	width: 0;
+	height: 0;
+	border-left: 0 solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 50px solid #888;
+	border-top: 0 solid transparent;
+}
+
+
+
+div.bottom {
+  position:relative;
+   }
+div.bottom p {
+  position:absolute;
+  bottom:0;
+  left:25%;
+  }
+label{cursor:pointer;}
+h1{color: #777777; line-height:60px;}
+h2{color: #777777; line-height:50px;}
+h3{color: #555555; }
+
+body {
+	font-size: 18px;
+	font-family: simyou;
+	text-decoration: none;
+	line-height: 28px;
+	font-weight: 200;
+	background-image: url(https://image.eduyun.cn:10002//data1/2020/9/22/15/50/3/f864a5b59480483e832c8ee308e93009/735cf5c31d9b4a8b576ddf422301a671.png);
+	margin-left: 30px;
+	margin-right: 50px;
+	left:20px;
+	top:30px;
+}
+a{ text-decoration:none;
+font-family: simyou;
+}
+.red_bg
+{
+background-color: #ffcccc;
+}
+
+a.hover{background-color: #c9ffc9;
+color: #00CC99;
+}
+a.active{background-color: #c9ffc9;
+color: #00CC99;
+}
+
+.table1 { 
+	border:solid #e36688;  
+	border-width:4px 4px 4px 4px;
+	padding:12px;
+	border-collapse:collapse;
+} 
+.td1{border:solid #e36688; border-width:0px 1px 1px 0px;}
+
+table { 
+	border:solid #e36688;  
+	border-width:4px 4px 4px 4px;
+	padding:12px;
+	border-collapse:collapse;
+} 
+
+th {   
+	font-size: 17px;
+	line-height:27px;
+	font-family: simyou;
+	color: #222222; 
+	text-decoration: none;
+	font-weight: 300;
+	border:solid #e36688; 
+	border-width:1px 1px 1px 1px;
+}
+
+td {
+	font-size: 15px;
+	line-height:25px;
+	font-family: simyou;
+	color: #111111; 
+	text-decoration: none;
+	border:solid #e36688; 
+	border-width:1px 1px 1px 1px;
+}
+
+.fixed_div{position:relative;bottom:20px;font-family: simhei;position: fixed ! important; right: 10px;}
+.fixed_upright{position:relative;top:10px;font-family: simhei;position: fixed ! important; right: 10px;}
+#toolbox {width:115px;background: #969696;box-shadow: 5px 5px 5px #444;-moz-box-shadow: 5px 5px 5px #444;
+-webkit-box-shadow: 5px 5px 5px #444;z-index:100;
+height:1800; right:20px; top: 20px;
+position: fixed ; }
+
+#fix1 { width: 870px; height: 440px; 
+  box-shadow: 5px 5px 5px #666;
+  -moz-box-shadow: 5px 5px 5px #666;
+  -webkit-box-shadow: 5px 5px 5px #666;
+margin: 15px 0;
+background: #D5E5F7; 
+
+padding:0px;
+z-index:1;
+}
+
+#div1 { width: 1100px; height: 1440px; 
+  box-shadow: 5px 5px 5px #666;
+  -moz-box-shadow: 5px 5px 5px #666;
+  -webkit-box-shadow: 5px 5px 5px #666;
+margin: 15px 0;
+background-color: #888888;
+padding:0px;
+z-index:2;
+
+}
+
+.white30{font-size:30px;font-family:simhei;color:#ffffff;font-weight:900;line-height:40px;}
+
+.comic14{font-family:'Comic Sans MS';font-size:14px;}
+.comic16{font-family:'Comic Sans MS';font-size:16px;}
+.comic16green{font-family:'Comic Sans MS';font-size:16px;color:#44ff22}
+.comic16green1{font-family:'Comic Sans MS';font-size:16px;color:#7EB560}
+.comic16purple{font-family:'Comic Sans MS';font-size:16px;color:#8F61BD}
+
+.comic18purple{font-family:'Comic Sans MS';font-size:18px;color:#8F61BD;font-weight:500;}
+.comic20purple{font-family:'Comic Sans MS';font-size:20px;color:#A836FE;font-weight:500;}
+
+.comic15purple{font-family:'Comic Sans MS';font-size:15px;color:#8F61BD}
+.simhei80{font-size:80px;font-family:simhei;color:#222222;font-weight:bold;}
+.simhei60{font-size:60px;font-family:simhei;color:#555555;font-weight:bold;line-height:75px;}
+.simhei50{font-size:50px;font-family:simhei;color:#555555;font-weight:bold;line-height:65px;}
+
+.simhei40{font-size:40px;font-family:simhei;color:#555555;font-weight:bold;line-height:55px;}
+.simhei30{font-size:30px;font-family:simhei;color:#222222;font-weight:bold;line-height:40px;}
+.simhei25{font-size:25px;font-family:simhei;color:#222222;font-weight:bold;line-height:35px;}
+.simhei20{font-size:20px;font-family:simhei;color:#222222;font-weight:bold;line-height:30px;}
+.simhei18{font-size:18px;font-family:simhei;color:#333333;font-weight:400;line-height:28px;}
+.simhei16{font-size:16px;font-family:simhei;color:#222222;font-weight:200;line-height:26px;}
+.simhei15{font-size:15px;font-family:simhei;color:#222222;font-weight:200;line-height:25px;}
+.simhei14{font-size:14px;font-family:simhei;color:#222222;font-weight:200;line-height:24px;}
+
+.yy20{font-size:20px;font-family:simyou;color:#444444;font-weight:900;line-height:30px;}
+.yy18{font-size:18px;font-family:simyou;color:#222222;font-weight:100;line-height:28px;}
+.yy16{font-size:16px;font-family:simyou;color:#222222;font-weight:200;line-height:26px;}
+
+.yy15{font-size:15px;font-family:simyou;color:#222222;font-weight:200;line-height:25px;}
+.yy13{font-size:13px;font-family:simyou;color:#222222;font-weight:100;line-height:23px;}
+
+.yy12{font-size:12px;font-family:simyou;color:#222222;font-weight:100;line-height:22px;}
+
+.simyou16{font-size:16px;font-family:simyou;color:#222222;font-weight:100;line-height:26px;}
+.simyou14{font-size:14px;font-family:simyou;color:#222222;font-weight:100;line-height:24px;}
+.simyou12{font-size:12px;font-family:simyou;color:#222222;font-weight:100;line-height:22px;}
+
+.button1 {BORDER-RIGHT: thin outset; PADDING: 10px; BORDER-TOP: thin outset;  line-height:35px;
+FONT-SIZE: 16px;  MARGIN: 2px; BORDER-LEFT: thin outset; COLOR: #000000;  BORDER-BOTTOM: thin outset; FONT-FAMILY: simyou; BACKGROUND-COLOR: #e36688}
+A.button1 {FONT-WEIGHT: normal; COLOR: #ffffff; BACKGROUND-COLOR: #4088e3; TEXT-DECORATION: none}
+A.button1:visited { TEXT-DECORATION: none}A.button1:active {    TEXT-DECORATION: none}
+A.button1:hover {   BORDER-RIGHT: thin inset; BORDER-TOP: thin inset; BORDER-LEFT: thin inset; COLOR: #ff0000; BORDER-BOTTOM: thin inset; HEIGHT: auto; TEXT-DECORATION: none}
+
+.button2 {BORDER-RIGHT: thin outset; BORDER-TOP: thin outset; PADDING:10px; line-height:35px;
+FONT-SIZE: 16px; MARGIN: 2px; BORDER-LEFT: thin outset; COLOR: #000000;  BORDER-BOTTOM: thin outset; FONT-FAMILY: simyou; BACKGROUND-COLOR: #ff0000}
+A.button2 {FONT-WEIGHT: normal;BACKGROUND-COLOR: #ff0000;  COLOR: #ffffff;TEXT-DECORATION: none}
+A.button2:visited { TEXT-DECORATION: none}
+A.button2:active {  TEXT-DECORATION: none}
+A.button2:hover {   BORDER-RIGHT: thin inset; BORDER-TOP: thin inset; BORDER-LEFT: thin inset;  COLOR: #0000ff; BORDER-BOTTOM: thin inset; HEIGHT: auto; TEXT-DECORATION: none}
+
+.button5 {BORDER-RIGHT: thin outset; PADDING-RIGHT:7px; BORDER-TOP: thin outset; PADDING-LEFT: 4px; 
+FONT-SIZE: 14px; PADDING-BOTTOM: 4px; MARGIN: 4px; height:30;BORDER-LEFT: thin outset; COLOR: #000000; PADDING-TOP:7px; BORDER-BOTTOM: thin outset; FONT-FAMILY: simyou; BACKGROUND-COLOR: #Ffffff} 
+A.button5 {FONT-WEIGHT: normal; COLOR: #000000; BACKGROUND-COLOR: #ffffff; TEXT-DECORATION: none}
+A.button5:visited {  TEXT-DECORATION: none}
+A.button5:active {   TEXT-DECORATION: none}
+A.button5:hover {    PADDING-TOP:7px;height:30; BORDER-RIGHT: thin inset; BORDER-TOP: thin inset; BORDER-LEFT: thin inset; COLOR: #ff0000; BORDER-BOTTOM: thin inset; TEXT-DECORATION: none}
+
+.button_grey {
+BORDER: thin outset; 
+PADDING:10px; 
+FONT-SIZE: 14px;  
+MARGIN: 4px; 
+height:30;
+COLOR: #000000;
+FONT-FAMILY:simyou; 
+BACKGROUND-COLOR: #dddddd;
+border-color:#bbbbbb;
+line-height:43px;
+} 
+
+A.button_grey {FONT-WEIGHT: normal; COLOR: #000000; BACKGROUND-COLOR: #dddddd; TEXT-DECORATION: none}
+A.button_grey:visited {border-color:#bbbbbb;  TEXT-DECORATION: none}
+A.button_grey:active {   TEXT-DECORATION: none}
+A.button_grey:hover {  BORDER:thin inset;COLOR: #ff0000;TEXT-DECORATION: none}
+
+.button_red {
+BORDER: thin outset; 
+PADDING:10px; 
+FONT-SIZE: 14px;
+font-weight:300;  
+MARGIN: 4px; 
+height:30;
+COLOR:#ffffff; 
+FONT-FAMILY: simyou; 
+BACKGROUND-COLOR: #ff0000
+} 
+
+A.button_red {COLOR: #ffffff; BACKGROUND-COLOR: #ff0000; TEXT-DECORATION: none}
+A.button_red:visited { COLOR:#ffffff;  TEXT-DECORATION: none}
+A.button_red:active {   TEXT-DECORATION: none}
+A.button_red:hover {  BORDER:thin inset;cOLOR: #ff0000; TEXT-DECORATION: none}
+
+.button20 {BORDER-RIGHT: thin outset;BORDER-TOP: thin outset; line-height:30px;width:100px;
+FONT-SIZE: 20px; PADDING: 6px; MARGIN: 2px; BORDER-LEFT: thin outset; COLOR: #000000; BORDER-BOTTOM: thin outset; FONT-FAMILY:微软雅黑; BACKGROUND-COLOR: #ffffff}
+A.button20 {FONT-WEIGHT: normal; COLOR: #000000; BACKGROUND-COLOR: #ffffff; TEXT-DECORATION: none}
+A.button20:visited { TEXT-DECORATION: none}
+A.button20:active { TEXT-DECORATION: none}
+
+.button20_red {BORDER-RIGHT: thin outset;BORDER-TOP: thin outset; line-height:30px;width:100px;
+FONT-SIZE: 20px; PADDING: 6px; MARGIN: 2px; BORDER-LEFT: thin outset; COLOR: #ffffff; BORDER-BOTTOM: thin outset; FONT-FAMILY:微软雅黑; BACKGROUND-COLOR: #ff0000}
+A.button20_red {FONT-WEIGHT: normal; COLOR: #ffffff; BACKGROUND-COLOR: #ff0000; TEXT-DECORATION: none}
+A.button20_red:visited { TEXT-DECORATION: none}
+A.button20_red:active { TEXT-DECORATION: none}
+
+.button_light_green15 {
+	background-color: #c9ffc9;
+	border: thin outset;
+	font-size: 15px;
+	font-family: simyou;
+	color: #222222; 
+	border-color:#FFFFFF;
+	margin: 2px;
+	padding: 6px;
+	text-decoration: none;
+	line-height: 40px;
+	font-weight: 200;
+}
+A.button_light_green15 {
+	TEXT-DECORATION: none;
+	cursor:pointer;
+}
+A.button_light_green15:visited {
+	TEXT-DECORATION: none;
+}
+A.button_light_green15:active {	TEXT-DECORATION: none; }
+A.button_light_green15:hover {
+	border: thin inset;
+	color: #000000;
+	text-decoration: none;
+	background-color: #FFFF00;
+	cursor:pointer;
+}
+
+
+.button_blue15 {
+	background-color: #0000ff;
+	border: thin outset;
+	font-size: 15px;
+	font-family: simyou;
+	color: #ffffff;
+	margin: 2px;
+	padding: 6px;
+	text-decoration: none;
+	line-height: 25px;
+	font-weight: 200;
+}
+A.button_blue15 {
+	TEXT-DECORATION: none;
+	cursor:pointer;
+}
+A.button_blue15:visited {
+	TEXT-DECORATION: none;
+}
+A.button_blue15:active {	TEXT-DECORATION: none; }
+A.button_blue15:hover {
+	border: thin inset;
+	color: #000000;
+	text-decoration: none;
+	background-color: #FFFF00;
+	cursor:pointer;
+}
+
+
+.button_red15 {
+	background-color: #ff0000;
+	border: thin outset;
+	font-size: 15px;
+	font-family: simyou;
+	color: #ffffff;
+	margin: 2px;
+	padding: 6px;
+	text-decoration: none;
+	line-height: 40px;
+	font-weight: 200;
+}
+A.button_red15 {
+	TEXT-DECORATION: none;
+	cursor:pointer;
+}
+A.button_red15:visited {
+	TEXT-DECORATION: none;
+}
+A.button_red15:active {	TEXT-DECORATION: none; }
+A.button_red15:hover {
+	border: thin inset;
+	color: #000000;
+	text-decoration: none;
+	background-color: #FFFF00;
+	cursor:pointer;
+}
+
+
+.button_white_big {
+	background-color: #ffffff;
+	border: thin outset;
+	font-size: 30px;
+	font-family: simyou;
+	color: #555555; border-color:#aaaaaa;
+	margin: 2px;
+	padding: 8px;
+	text-decoration: none;
+	line-height: 40px;
+	font-weight: 600;
+box-shadow: 2px 2px 2px #666;
+  -moz-box-shadow: 2px 2px 2px #666;
+  -webkit-box-shadow: 2px 2px 2px #666;
+	
+	
+ -moz-user-select:none;
+      -webkit-user-select:none;
+      user-select:none;    	
+
+
+}
+A.button_white_big {
+	TEXT-DECORATION: none;
+	cursor:pointer;
+}
+A.button_white_big:visited {
+	TEXT-DECORATION: none;
+}
+A.button_white_big:active {	TEXT-DECORATION: none; }
+A.button_white_big:hover {
+	border: thin inset;
+	color: #000000;
+	text-decoration: none;
+	background-color: #00FFFF;
+	cursor:pointer;
+}
+
+
+
+.button_red_big {
+	background-color: #ff0000;
+	border: thin outset;
+	font-size: 30px;
+	font-family: simyou;
+	color: #ffffff; border-color:#aaaaaa;
+	margin: 2px;
+	padding: 8px;
+	text-decoration: none;
+	line-height: 40px;
+	font-weight: 600;
+box-shadow: 2px 2px 2px #666;
+  -moz-box-shadow: 2px 2px 2px #666;
+  -webkit-box-shadow: 2px 2px 2px #666;
+	
+	
+ -moz-user-select:none;
+      -webkit-user-select:none;
+      user-select:none;    	
+
+
+}
+A.button_red_big {
+	TEXT-DECORATION: none;
+	cursor:pointer;
+}
+A.button_red_big:visited {
+	TEXT-DECORATION: none;
+}
+A.button_red_big:active {	TEXT-DECORATION: none; }
+
+A.button_red_big:hover {
+	border: thin inset;
+	color: #000000;
+	text-decoration: none;
+	background-color: #00FFFF;
+	cursor:pointer;
+}
+
+
+
+
+
+</style>
+
+<script src=http://libs.baidu.com/jquery/2.1.4/jquery.min.js defer=defer></script>
+<script src=https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js defer=defer></script>
+<script  src='https://cdn.jsdelivr.net/npm/echarts@5.2.2/dist/echarts.min.js' defer=defer></script>
+<script src=https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js defer=defer></script>
+<script language=javascript src=jmin.js></script>
+<script language=javascript src=emin.js></script>
+
+<script type=text/javascript>
+var init1=0;
+var init2=0;
+var init3=0;
+var init4=0;
+function scrollToAnchor(aid) 
+{
+      var aTag = $("a[name='" + aid + "']");
+      $('html,body').animate({
+        scrollTop: aTag.offset().top
+      }, 'slow');
+window.getSelection().empty();
+}
+
+       function open_max_window(url) {
+            if (url != null) {
+                try {
+                    var feature = 'fullscreen=1,top=0, left=0,toolbar=no,menubar=no, scrollbars=no, resizable=no,location=no,status=no,channelmode = yes';
+                    var newwindows = window.open(url, "", feature);
+                    newwindows.moveTo(0, 0); 
+                    newwindows.resizeTo(screen.width, screen.height); 
+                    if (newwindows != null) {
+                        newwindow.focus();
+                    }
+                }
+                catch (e) {
+                }
+            }
+        }
+	
+function tips(sss) {
+var ui =document.getElementById('help1');
+ui.innerText=sss;
+//ui.style.backgroundColor='#ffffff';
+ui.style.color='#ff0000';
+ui.style.fontSize='20px';
+ui.style.fontWeight='bolder';
+
+}
+
+function feng_trim(x) {
+return x.replace(/^\s+|\s+$/gm,'');
+}
+function get_number(s) 
+{return s.replace(/[^0-9]/ig,'') 
+ }
+</script>
+
+<script>
+function click_kemu(this1,kemu1)
+{    
+
+
+$('.all_kemu_button').removeClass('button_red15');
+$('.all_kemu_button').addClass('button_light_green15');
+$(this1).addClass('button_red15');
+
+$('.all_kemu_table').hide();
+$('.'+kemu1).show();
+}
+
+</script>
+
+
+
+
+
+
+
+
+<title>资源库（越秀区教育发展研究院）</title><center><h1>越秀区教育发展研究院<br><span style=font-size:50px;line-height:60px;>资源库</span></h1>
+<table  style=border-collapse:collapse; border=1 bordercolor=#CC3333 cellpadding=12>
+<tr bgcolor=#fff3f3>
+  <td class=yy20 nowrap>全院通用的<br>教育教学资源</td>
+  <td valign="top" width=200px wrap>
+  <p class=blue16  onclick=window.open('http://www.yuexiu.gov.cn/jyj/') target=_blank>越秀教育网</p>
+   <p class=blue16  onclick=window.open('https://oa.gzyxedu.net/OA/Login.aspx') target=_blank>越秀OA办公系统</p>
+   <p class=blue16  onclick=window.open('https://v.gzyxedu.net') target=_blank>越秀全连接智慧教学平台</p>
+
+      <p class=blue16  onclick=window.open('http://r.cnki.net/KNS/brief/result.aspx?dbprefix=CFED') target=_blank>CNKI基础教育期刊（越秀已购）</p>
+	     <p class=blue16  onclick=window.open('https://vedio.gzyxedu.net/') target=_blank>越秀视频资源共享平台</p>
+
+  <p class=blue16  onclick=window.open('https://www.zxxk.com/') target=_blank>学科网、组卷网（越秀已购）</p>
+  <p class=blue16  onclick=window.open('http://mingce.imwork.net:21766/20201215.htm') target=_blank>院教师工作云盘（含研训视频库）</p>
+
+  <p class=blue16  onclick=window.open('https://docs.qq.com/doc/DZmtaSU5sVnVFS3Bo') target=_blank>教育政策（政策研究中心整理）</p>
+   <p class=blue16  onclick=window.open('https://222.16.142.143') target=_blank>越秀区教学质量监测评价系统</p>
+
+	
+	</td>
+  <td valign="top" width=200px wrap >
+  
+   <p class=blue16  onclick=window.open('https://gzclass.gztv.com/gksubjecpc/index.html#/') target=_blank>广州共享课堂</p>
+   <p class=blue16  onclick=window.open('https://www.zxx.edu.cn/') target=_blank>国家中小学智慧教育云平台</p>
+  <p class=blue16  onclick=window.open('https://1s1k.eduyun.cn/portal/html/1s1k/course/B2D0BF4C-C9FC-FAC5-B0B9-6C66D3F75617.html') target=_blank>一师一优课（越秀区）</p>
+    <p class=blue16  onclick=window.open('https://www2.guangztr.edu.cn/') target=_blank>广州市教育研究院</p>
+	
+	<p class=blue16  onclick=window.open('http://www.gzteacher.com/') target=_blank>广州市中小学教师继续教育网</p>
+
+	
+	
+  </td>
+  <td valign="top"  width=300px wrap>
+  
+  <p class=blue16  onclick=window.open('公众号_广州市越秀区教育发展研究院.htm') target=_blank>公众号【广州市越秀区教育发展研究院】</p>
+  <p class=blue16  onclick=window.open('公众号_心育越秀.htm') target=_blank>公众号【心育越秀】</p>
+<p class=blue16  onclick=window.open('http://blog.sina.com.cn/u/6882293572') target=_blank>博客【越秀高中政治教研】</p>
+  <p class=blue16  onclick=window.open('公众号_秀创空间.htm') target=_blank>公众号【秀创空间】</p>
+  <p class=blue16  onclick=window.open('公众号_越秀高中信息技术教育.htm') target=_blank>公众号【越秀高中信息技术教育】</p>
+  <p class=blue16  onclick=window.open('公众号_越秀初高中英语教研.htm') target=_blank>公众号【越秀初高中英语教研】</p>
+  <p class=blue16  onclick=window.open('公众号_越秀科学.htm') target=_blank>公众号【越秀科学】</p>
+  <p class=blue16  onclick=window.open('公众号_越秀小美人.htm') target=_blank>公众号【越秀小美人】</p>
+<p class=blue16  onclick=window.open('公众号_广东省辛小勇名教师工作室.htm') target=_blank>公众号【广东省辛小勇名教师工作室】</p>
+<p class=blue16  onclick=window.open('公众号_越秀爱劳动.htm') target=_blank>公众号【越秀爱劳动】</p>
+
+  </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>小学语文</td>
+<td width=250px wrap class=blue16  onclick=window.open('小学_小学语文_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('小学_小学语文_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>小学数学</td>
+<td width=250px wrap class=blue16  onclick=window.open('小学_小学数学_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('小学_小学数学_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>小学英语</td>
+<td width=250px wrap class=blue16  onclick=window.open('小学_小学英语_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('小学_小学英语_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>小学道德与法治</td>
+<td width=250px wrap class=blue16  onclick=window.open('小学_小学道德与法治_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('小学_小学道德与法治_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>小学科学</td>
+<td width=250px wrap class=blue16  onclick=window.open('小学_小学科学_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('小学_小学科学_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>小学音乐</td>
+<td width=250px wrap class=blue16  onclick=window.open('小学_小学音乐_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('小学_小学音乐_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>小学美术</td>
+<td width=250px wrap class=blue16  onclick=window.open('小学_小学美术_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('小学_小学美术_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>小学体育与健康</td>
+<td width=250px wrap class=blue16  onclick=window.open('小学_小学体育与健康_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('小学_小学体育与健康_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>小学家庭体育锻炼</td>
+<td width=250px wrap class=blue16  onclick=window.open('小学_小学家庭体育锻炼_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('小学_小学家庭体育锻炼_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>小学心理健康教育</td>
+<td width=250px wrap class=blue16  onclick=window.open('小学_小学心理健康教育_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('小学_小学心理健康教育_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>小学综合实践活动</td>
+<td width=250px wrap class=blue16  onclick=window.open('小学_小学综合实践活动_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('小学_小学综合实践活动_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>小学信息技术</td>
+<td width=250px wrap class=blue16  onclick=window.open('小学_小学信息技术_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('小学_小学信息技术_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>小学特殊教育</td>
+<td width=250px wrap class=blue16  onclick=window.open('小学_小学特殊教育_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('小学_小学特殊教育_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>初中语文</td>
+<td width=250px wrap class=blue16  onclick=window.open('初中_初中语文_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('初中_初中语文_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>初中数学</td>
+<td width=250px wrap class=blue16  onclick=window.open('初中_初中数学_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('初中_初中数学_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>初中英语</td>
+<td width=250px wrap class=blue16  onclick=window.open('初中_初中英语_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('初中_初中英语_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>初中物理</td>
+<td width=250px wrap class=blue16  onclick=window.open('初中_初中物理_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('初中_初中物理_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>初中化学</td>
+<td width=250px wrap class=blue16  onclick=window.open('初中_初中化学_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('初中_初中化学_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>初中生物</td>
+<td width=250px wrap class=blue16  onclick=window.open('初中_初中生物_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('初中_初中生物_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>初中道德与法治</td>
+<td width=250px wrap class=blue16  onclick=window.open('初中_初中道德与法治_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('初中_初中道德与法治_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>初中地理</td>
+<td width=250px wrap class=blue16  onclick=window.open('初中_初中地理_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('初中_初中地理_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>初中历史</td>
+<td width=250px wrap class=blue16  onclick=window.open('初中_初中历史_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('初中_初中历史_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>初中美术</td>
+<td width=250px wrap class=blue16  onclick=window.open('初中_初中美术_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('初中_初中美术_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>初中音乐</td>
+<td width=250px wrap class=blue16  onclick=window.open('初中_初中音乐_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('初中_初中音乐_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>初中信息技术</td>
+<td width=250px wrap class=blue16  onclick=window.open('初中_初中信息技术_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('初中_初中信息技术_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>初中心理健康教育</td>
+<td width=250px wrap class=blue16  onclick=window.open('初中_初中心理健康教育_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('初中_初中心理健康教育_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>初中体育与健康</td>
+<td width=250px wrap class=blue16  onclick=window.open('初中_初中体育与健康_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('初中_初中体育与健康_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>初中家庭体育锻炼</td>
+<td width=250px wrap class=blue16  onclick=window.open('初中_初中家庭体育锻炼_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('初中_初中家庭体育锻炼_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>初中综合实践活动</td>
+<td width=250px wrap class=blue16  onclick=window.open('初中_初中综合实践活动_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('初中_初中综合实践活动_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>高中语文</td>
+<td width=250px wrap class=blue16  onclick=window.open('高中_高中语文_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('高中_高中语文_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>高中数学</td>
+<td width=250px wrap class=blue16  onclick=window.open('高中_高中数学_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('高中_高中数学_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>高中英语</td>
+<td width=250px wrap class=blue16  onclick=window.open('高中_高中英语_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('高中_高中英语_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>高中物理</td>
+<td width=250px wrap class=blue16  onclick=window.open('高中_高中物理_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('高中_高中物理_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>高中化学</td>
+<td width=250px wrap class=blue16  onclick=window.open('高中_高中化学_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('高中_高中化学_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>高中生物学</td>
+<td width=250px wrap class=blue16  onclick=window.open('高中_高中生物学_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('高中_高中生物学_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>高中思想政治</td>
+<td width=250px wrap class=blue16  onclick=window.open('高中_高中思想政治_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('高中_高中思想政治_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>高中地理</td>
+<td width=250px wrap class=blue16  onclick=window.open('高中_高中地理_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('高中_高中地理_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>高中历史</td>
+<td width=250px wrap class=blue16  onclick=window.open('高中_高中历史_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('高中_高中历史_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>高中美术</td>
+<td width=250px wrap class=blue16  onclick=window.open('高中_高中美术_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('高中_高中美术_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>高中音乐</td>
+<td width=250px wrap class=blue16  onclick=window.open('高中_高中音乐_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('高中_高中音乐_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>高中信息技术</td>
+<td width=250px wrap class=blue16  onclick=window.open('高中_高中信息技术_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('高中_高中信息技术_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>高中通用技术</td>
+<td width=250px wrap class=blue16  onclick=window.open('高中_高中通用技术_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('高中_高中通用技术_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>高中体育与健康</td>
+<td width=250px wrap class=blue16  onclick=window.open('高中_高中体育与健康_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('高中_高中体育与健康_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>高中居家体能训练</td>
+<td width=250px wrap class=blue16  onclick=window.open('高中_高中居家体能训练_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('高中_高中居家体能训练_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>高中心理健康教育</td>
+<td width=250px wrap class=blue16  onclick=window.open('高中_高中心理健康教育_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('高中_高中心理健康教育_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+<tr bgcolor=#fff3f3>
+<td class=yy20 nowrap>高中综合实践活动</td>
+<td width=250px wrap class=blue16  onclick=window.open('高中_高中综合实践活动_2019.htm') target=_blank>2015-2019精选课例</a></td>
+<td width=200px wrap class=blue16  onclick=window.open('高中_高中综合实践活动_2022.htm') target=_blank>2020-2022精选课例</a></td>
+<td nowrap class=blue16  width=100px> </td>
+</tr>
+</table><br><br><br><br><br><br><br><br><br><br></center>
