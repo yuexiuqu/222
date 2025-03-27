@@ -16,4 +16,4 @@ git push origin main
 
 REM 显示完成信息
 echo 更新已推送到GitHub！
-pause
+rem pause
