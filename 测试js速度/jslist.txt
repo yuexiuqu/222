@@ -1,0 +1,2 @@
+https://fengying.neocities.org/jQueryRotate.2.2.js
+http://demo.jb51.net/js/2016/jquery-rotate-pic-scroll-style-codes/jQueryRotate.2.2.js
